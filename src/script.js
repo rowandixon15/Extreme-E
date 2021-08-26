@@ -1,6 +1,6 @@
 import './style.css'
 import * as THREE from 'three'
-//import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import * as dat from 'dat.gui'
 
 // Texture Loader
@@ -86,7 +86,7 @@ camera.position.z = 3
 scene.add(camera)
 
 // Controls
-// const controls = new OrbitControls(camera, canvas)
+const controls = new OrbitControls(camera, canvas)
 // controls.enableDamping = true
 
 /**
@@ -126,7 +126,7 @@ const tick = () =>
     plane.material.displacementScale =0.08 + 0.0002*mouseY
 
     // Update Orbital Controls
-    // controls.update()
+    controls.update()
 
     // Render
     renderer.render(scene, camera)
