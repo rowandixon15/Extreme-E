@@ -122,8 +122,8 @@ const tick = () =>
     // Update objects
     //sphere.rotation.y = .5 * elapsedTime
 
-    plane.rotation.z = .3 *  elapsedTime
-    plane.material.displacementScale =0.08 + 0.0008*mouseY
+    plane.rotation.z = .1 *  elapsedTime
+    plane.material.displacementScale =0.08 + 0.0002*mouseY
 
     // Update Orbital Controls
     // controls.update()
