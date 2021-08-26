@@ -46,7 +46,7 @@ plane.rotation.x= 175
 
 // Lights
 
-const pointLight = new THREE.PointLight(0xffffff, 1.9)
+const pointLight = new THREE.PointLight(0xffffff, 1.0)
 pointLight.position.x = 2
 pointLight.position.y = 3
 pointLight.position.z = 4
